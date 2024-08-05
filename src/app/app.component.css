@@ -1,0 +1,56 @@
+header {
+  margin: 3rem auto;
+  text-align: center;
+}
+
+img {
+  width: 8rem;
+}
+
+h1 {
+  margin: 1rem auto;
+  background: -webkit-linear-gradient(45deg, #f9096d, #b700ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the main container horizontally */
+}
+
+.user-list {
+  list-style: inside;
+  padding: 0;
+  margin: 0;
+  width: 100%; /* Adjust width as needed */
+
+}
+
+.user-list li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 08px 0;
+
+}
+
+.user-task-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center items vertically */
+  width: 80%; /* Adjust width as needed */
+}
+
+.user-task-container app-user {
+  flex: 0 0 auto; /* Prevent the app-user from growing or shrinking */
+  margin-right: 40px; /* Space between user and tasks */
+}
+
+.tasks-container {
+  flex: fit-content; /* Allow tasks container to grow */
+  text-align: left; /* Align text to the left */
+  display: flex;
+  align-items: center; /* Center the name vertically */
+}

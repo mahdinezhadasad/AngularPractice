@@ -1,0 +1,13 @@
+<app-header></app-header>
+<main class="main-container">
+  <ul id="users" class="user-list">
+    <li *ngFor="let user of users; trackBy: trackByUserId" (click)="onSelectUser(user.id)">
+      <div class="user-task-container">
+        <app-user [user]="user" [selected]="user.id === selectedUserId"></app-user>
+        <div *ngIf="selectedUserId === user.id && selectedUser" class="tasks-container">
+          <app-tasks   [userId]="selectedUser.id" [name]="user.name"></app-tasks>
+        </div>
+      </div>
+    </li>
+  </ul>
+</main>
